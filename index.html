@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="">The Library</h1>
+    <hr
+      style="
+        height: 2px;
+        border-width: 0;
+        color: black;
+        background-color: black;
+      "
+    />
+    <div class="wrapper">
+      <button class="add">
+        <img src="./icons/plus-svgrepo-com.svg" alt="Add icon" />
+        Add a New Book
+      </button>
+    </div>
+    <hr
+      style="
+        height: 2px;
+        border-width: 0;
+        color: black;
+        background-color: black;
+      "
+    />
+
+    <div>
+      <dialog>
+        <form>
+          <div>
+            <label for="title">Title : </label>
+            <input type="text" id="title" required="required" />
+          </div>
+          <div class="author-box">
+            <label for="author">Author: </label>
+            <input type="text" id="author" required />
+          </div>
+          <div class="pages">
+            <label for="pages">Pages:</label>
+            <input type="number" id="pages" required />
+          </div>
+          <div class="radio">
+            <h3>Read the book?</h3>
+            <label for="read">
+              <input type="checkbox" name="read" value="true" id="read" />Read
+            </label>
+          </div>
+          <div class="btn">
+            <button id="close" formmethod="dialog">Cancel</button>
+            <button type="submit" id="submit">Add Book</button>
+          </div>
+        </form>
+      </dialog>
+    </div>
+    <div class="container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
